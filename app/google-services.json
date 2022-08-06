@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "733372387489",
+    "project_id": "high-fighter",
+    "storage_bucket": "high-fighter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733372387489:android:db99d8e69d14b71ca9a0e0",
+        "android_client_info": {
+          "package_name": "hu.bme.aut.android.high_fighter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733372387489-f1mvngja3tusd8nfo1m6r3tl8qd7vvte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA1WKLTIpPKpyjS58U6WBr1SU2ExT2xn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733372387489-f1mvngja3tusd8nfo1m6r3tl8qd7vvte.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

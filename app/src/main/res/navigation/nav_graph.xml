@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="hu.bme.aut.android.high_fighter.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="hu.bme.aut.android.high_fighter.fragments.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="hu.bme.aut.android.high_fighter.fragments.DetailsFragment"
+        android:label="DetailsFragment"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="heroId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_detailsFragment_to_enemyListFragment"
+            app:destination="@id/enemyListFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="hu.bme.aut.android.high_fighter.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_enemyListFragment"
+            app:destination="@id/enemyListFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_logout"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/enemyListFragment"
+        android:name="hu.bme.aut.android.high_fighter.fragments.EnemyListFragment"
+        android:label="EnemyListFragment"
+        tools:layout="@layout/fragment_enemy_list">
+        <argument
+            android:name="chosenId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_enemyListFragment_to_battleFragment"
+            app:destination="@id/battleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/battleFragment"
+        android:name="hu.bme.aut.android.high_fighter.fragments.BattleFragment"
+        android:label="BattleFragment"
+        tools:layout="@layout/fragment_battle"/>
+
+</navigation>

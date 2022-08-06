@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">High-fighter</string>
+    <string name="email">E-mail</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="register">Regisztrálás</string>
+    <string name="title_activity_hero_detail_host">HeroDetailHostActivity</string>
+    <string name="title_hero_list">Heroes</string>
+    <string name="title_hero_detail">Hero Detail</string>
+    <string name="textview">TextView</string>
+    <string name="btn_load">ELŐZŐ JÁTÉK</string>
+    <string name="btn_newgame">ÚJ JÁTÉK</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvTitle">HIGH-FIGHTER</string>
+    <string name="tvChooseHero">Válassz egy hőst a harchoz!</string>
+    <string name="choose">Választás</string>
+    <string name="name">Név:</string>
+    <string name="hp">Életerő:</string>
+    <string name="strength">Erő:</string>
+    <string name="def">Védekezés:    </string>
+    <string name="dex">Ügyesség:</string>
+    <string name="choose_enemy">Válassz egy ellenfelet!</string>
+
+</resources>
